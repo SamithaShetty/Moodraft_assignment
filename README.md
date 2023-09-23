@@ -8,15 +8,15 @@ Creating a detailed code for a fake image detection system using robust hashing 
 
 This project is organized into the following components:
 
-1. `training_model.py`: This script is responsible for training the fake image detection model. It extracts image features, preprocesses data, and fine-tunes the model using a GridSearchCV approach.
+1. **`training_model.py`**: This script is responsible for training the fake image detection model. It extracts image features, preprocesses data, and fine-tunes the model using a GridSearchCV approach.
 
-2. `testing_model.py`: Use this script to test the trained fake image detection model. You can provide an image as input, and the model will classify it as real or fake.
+2. **`testing_model.py`**: Use this script to test the trained fake image detection model. You can provide an image as input, and the model will classify it as real or fake.
 
-3. `utils.py`: This file contains utility functions for image preprocessing, hashing, and other operations used in the training and testing scripts.
+3. **`utils.py`**: This file contains utility functions for image preprocessing, hashing, and other operations used in the training and testing scripts.
 
-4. `requirements.txt`: Lists the required Python packages and their versions.
+4. **`requirements.txt`**: Lists the required Python packages and their versions.
 
-5. `dataset` : Contains the required dataset to train the model.
+5. **`dataset`** : Contains the required dataset to train the model.
 
 ## Getting Started
 
@@ -41,10 +41,10 @@ To train the fake image detection model, follow these steps:
 ```bash
 python training_model.py
 ```
-This script will train the model and save it as 'best_fake_image_detection_model.pkl'.
+This script will train the model and save it as **'best_fake_image_detection_model.pkl'**.
 
 ### Step 4: Testing the Model
-To test the model with an input image, use the 'testing_model.py' script. Replace 'your_model_path' with the actual path to the saved model:
+To test the model with an input image, use the **'testing_model.py'** script. Replace **'your_model_path'** with the actual path to the saved model:
 ```bash
 python testing_model.py
 ```
@@ -59,12 +59,12 @@ Provide the path to the input image when prompted. The script will classify the 
 * joblib
 
 ## Experimentation
-You can experiment with different feature extraction and classification techniques to improve the model's performance. In the 'training_model.py' script, you can modify the preprocessing, scaling, dimensionality reduction, and classifier options. Use scikit-learn's GridSearchCV to find the best hyperparameter combinations.
+You can experiment with different feature extraction and classification techniques to improve the model's performance. In the **'training_model.py'** script, you can modify the preprocessing, scaling, dimensionality reduction, and classifier options. Use scikit-learn's GridSearchCV to find the best hyperparameter combinations.
 
 Remember to save the best model obtained from experimentation for future use.
 
 ## Dataset
-Ensure that you have a dataset of real and fake images organized in a directory structure as mentioned in 'training_model.py'. You can customize the dataset path in the script.
+Ensure that you have a dataset of real and fake images organized in a directory structure as mentioned in **'training_model.py'**. You can customize the dataset path in the script.
 
 ## Authors
 
